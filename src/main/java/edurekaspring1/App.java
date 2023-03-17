@@ -21,6 +21,18 @@ public class App {
 		
 		System.out.println(emp);
 		ctx.close();
+		
+		try {
+      File myObj = new File("C:\\TAS\\git_repo\\concourse_tutorial\\version.txt");
+      if (myObj.createNewFile()) {
+        System.out.println("File created: " + myObj.getName());
+      } else {
+        System.out.println("File already exists.");
+      }
+    } catch (IOException e) {
+      System.out.println("An error occurred.");
+      e.printStackTrace();
+    }
 	}
 
 }
