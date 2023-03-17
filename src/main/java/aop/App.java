@@ -11,5 +11,18 @@ public static void main(String[] args) throws Exception {
 	System.out.println("_____________________________");
 	s.getBalance();
 	s.meth();
+	
+	try {
+      File myObj = new File("version.txt");
+      if (myObj.createNewFile()) {
+        System.out.println("File created: " + myObj.getName());
+      } else {
+        System.out.println("File already exists.");
+      }
+    } catch (IOException e) {
+      System.out.println("An error occurred.");
+      e.printStackTrace();
+    }
+  }
 }
 }
