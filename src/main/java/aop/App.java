@@ -13,7 +13,7 @@ public static void main(String[] args) throws Exception {
 	s.meth();
 	
 	try {
-      File myObj = new File("version.txt");
+      File myObj = new File("C:\\TAS\\git_repo\\concourse_tutorial\\version.txt");
       if (myObj.createNewFile()) {
         System.out.println("File created: " + myObj.getName());
       } else {
